@@ -1,0 +1,17 @@
+.container {
+    width: 200px;
+    float: left;
+    border-width: 2px;
+    border-color: red;
+    /*margin-top: 20px;*/
+
+    clear: both;
+    }
+.container input {
+    width: 100%;
+    clear: both;
+}
+.container button {
+	margin-top: 10px;
+	border-width: 2px;
+}
