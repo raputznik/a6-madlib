@@ -1,25 +1,13 @@
 jQuery(document).ready(function($) {
+	$("#response").hide();
 
-	// alert(getParameterByName('first_name'));
-	// alert(getParameterByName('last_name'));
-	if(getParameterByName('noun') !=undefined);
-	{
+	$('#button').click(function(event) {
 
-		console.log("we have info to show");
-		var name = getParameterByName('noun');
-		var last = getParameterByName('verb1');
-		var url = getParameterByName('image');
+	var noun1 = $(#noun1).val();
 
-		$('#information').html('<p1>' + name + ' went to town ' + last + '</p1>');
-		$('#information').append('<img src="' + url + '"/>')
-	}
+	$('#nounplace1').append(noun1);
 
+	$("#response").show();
+
+    });
 });
-
-
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
