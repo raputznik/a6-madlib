@@ -1,13 +1,15 @@
-jQuery(document).ready(function($) {
-	$("#response").hide();
+$(document).ready(function(){
+	$("#main").hide();
 
 	$('#button').click(function(event) {
 
-	var noun1 = $(#noun1).val();
+		var poop = $('#noun1').val();
 
-	$('#nounplace1').append(noun1);
+		$('#nounplace1').append(poop);
 
-	$("#response").show();
+		$("#main").show();
+			$("#container").hide();
+
 
     });
 });
