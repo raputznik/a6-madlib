@@ -3,12 +3,13 @@ $(document).ready(function(){
 
 	$('#button').click(function(event) {
 
-		var poop = $('#noun1').val();
+		var noun1 = $('#noun1').val();
 
-		$('#nounplace1').append(poop);
+		$('#nounplace1').append(noun1);
 
 		$("#main").show();
-			$("#container").hide();
+		$("#container").hide();
+		return false;
 
 
     });
